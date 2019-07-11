@@ -1,0 +1,49 @@
+18 Decembre 2018:
+
+CNN :  	Generalement yestaamlouha lel les images, kol partie mel image heya feature, w baaed yaamel convolution m3a image principal bech yaaref.
+		Subsampling/Pooling : Le fait howa eli tekhou valeur indicatif mtaa blassa fel image,w thotha ken heya -> Why we do this? Khater fama phenoméne mtaa partial recongnition, du coup nkhali ken l recognition bidha :D
+		CNN, surpervised, to learn, lezemha plusieurs image labeled, w heya t9asem les features mte3ha w twali taarafhom. 
+		CNN : transform input from raw data -> features that will be given to a NN. 
+		Filters of CNN are intialized complety Random. 
+
+		How to avoid CNN overfitting :  * Dropout -> Randomly set output of network neurons to 0.
+										* Weight Decay -> Keeps magnitude of weights close to zero.
+										* Data Augmentation -> Ki yabda aandi data set sghir, w nheb I avoid overfitting, nekhou tsawer naamlelhom translation wala rotation, w ndakhalhom fel trainingset, khater l NN, yeskheylhom distinct pictures. 
+
+		CNN For TextClassification :
+
+			We use the same idea, we just have as input a text. And we represent the text such as, everyword is for example a word2vec. The filter we use is 2 * size of embeding size |V|, lezem naamlou akeka bech mankhsrouch information mta3 vector w manekhdhouch valeur mta3 taille de filter bel zhar ( 3aks cas des images, eli taille filter, n'a rien à voir avec la taille de la matrice de l'image ). Tout le text ywali matrice, kima image, w on utilse le même principe.
+
+			We can use different embedings for the same text.
+
+			We can have statics vector at the begening ( kima word2vec ) w n7asnouhom using backpropagation. 
+
+			Word2vec was trained of 6 billion words of google News, najemou naamlou ahna embeding mte3na, w l sujet bien précit ( medical par exemple ), haja hethi essemha local embedings. W nekhdmou beha baaed. 
+
+			NN bech yekhdmou mlih, they need a lot of data. Fama data set essemha TREC, (Conference TREC hethi aandha 30 ans), the documents of TREC are long, ama mouch barcha documents, just few hundrends or few thousands of documents. Fel cas hetha, SVM yekhdem khir mel NN, khater le nombre de documents chwaya alekher.  
+
+			Saliency : Heya ykharajlek les mots eli y2atherou akther 3la classification of texts.
+
+			Najemou zeda naamlou embeding caracter level, haja tosloh fel chienese language. 
+
+			CNN behia for tout ce qui est spatiale.  
+
+RNN : 		Text is sequential, like time series.
+			Prend en consideration h(t-1)
+			RNN problem is that its memory can not be controled.
+			RNN have vanishing gradient problem and keep track of information for longer term problem ( memory )
+			Solution -> LSTM - Long Short Term Memory
+
+LSTM : 		Solution of RNN.  
+
+GRU  :		Is an improvement of LSTM.
+
+AutoEncoder : The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction. Along 			   with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a 				  representation as close as possible to its original input, hence its name.
+
+			Attention ; Is the fact the we take into account the value of the last hidden state. 
+			Context vector : Is the sum of all last hidden state vectors.
+
+
+
+
+

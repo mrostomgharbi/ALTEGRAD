@@ -1,0 +1,15 @@
+19/12/2018 - ALTEGRAD : 
+
+Context vector : Weighted sum of the previous hidden states from the begening of the sentence we're interested in.
+
+Self-Attention : We only have an encoder. No more need for a decoder. The sequence here, is a sequence of sentences. Every sentence have a semantic meaning. 
+
+Energy Based Models (EBM) : It is learning a similarity metrics.  We choose the one with the lowest energy -> Highest similarity. 
+					  		They can do ; Prediction / Classification / Decision Making / Ranking / Detecion / Conditional Density estimation 
+
+Siamese Architecture : Two inputs of the same type ( pas necessairement same label ), W ki yabdew mel nafs label, error dh3ifa, sinon tkoun 						   tal3a belgde.
+					   Elle est utilisé for face recognition par exemple. 
+
+Trîplet network : Inputs are : Haja mel class positif, haja mel classe négatif, and what we want to predict. 
+
+Quadruplet network : 4 inputs - Better separation between elements. 

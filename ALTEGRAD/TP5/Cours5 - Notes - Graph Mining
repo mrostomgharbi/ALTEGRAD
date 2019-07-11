@@ -1,0 +1,47 @@
+					19/12/2018 - ALTEGRAD - Graph Mining
+
+	Intro : 
+A graph is called a tree, if it's a connected graph and have no cycle in it. 
+
+Bipartite Graphs : Exemple users w yechriw items. user can buy a user. 
+
+
+	Graph Generators :
+
+- Erdos Renyi Random Graph -> Mochkletha anou matekhouch en consideration degree mtaa node. 
+
+- Barabasi-Albert : Model eli yekhou en consideration degree mtaa noeuds, si jamais bch nzidouha des noeurs okherin. Maadech homogéne kima avec Erdos Renyi.
+
+- Kronecker Model for Graphs : Anou l model y3awed rouhou. Kol graph feha pattern mou3ayen. W howa y3awed l pattern etheka. 
+
+- Stochastic Block Models (SBM)
+
+-------------------------------------------------------------------
+
+	Supervised learning for graphs : 
+
+Graph classificatio : Exemple -> Par exemple fel chimie, ki tekhou graph mtaa components d'une molécule, taaref si poison wale. 
+
+	Unsupervised Learning :
+
+Main objective : Community detection.
+A community is good, if it has a lot of edges inside, and some edges going outside of the community. 
+
+Ratiocut : Takes into account l size mtaa resulting cluster, khater najemou ki n9ossou ken en fonction dum in nombre des edges, nkhaliw community ( cluster ) feha noeud wahda. 
+
+Ncut : De façon à ce que sum of weights inside a cluster is maximum. 
+
+	Spectral clustering : 
+
+L = D - W // L : Laplacian / W : Adjecny / D : Degree
+TO minimize the expression, we decompose L = UVU^t, and keep the top K eighen vectors and values. 
+By construction, the eighen values of L are increasing and positifs. 
+
+If its K clusters, nekhdhou first k eighen vectors of L, nprojetiw les données 3lehom, w baaed naamel K-means. 
+
+
+	Modularity based algorithm : Tries to cut the edges with highest betweenes centrality. We want to minimize modularity.
+
+K-core : Used for community detection. 
+
+
